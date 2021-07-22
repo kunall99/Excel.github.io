@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 0.8rem;
+}
+
+.menu-options {
+    height: 50px;
+    display: flex;
+    background: thistle;
+    align-items: center;
+}
+
+.menu-options>div {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    height: 75%;
+    border-right: 1px solid;
+}
+
+.menu-options-1>div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 65%;
+    width: 15%;
+    border-radius: 5px;
+}
+
+.menu-options-1>div:hover, .menu-options-2>div:hover{
+    background-color: lightgray;
+}
+
+.menu-options-2>div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 65%;
+    width: 15%;
+    border-radius: 5px;
+}
+
+.menu-options-3>div {
+}
+
+.menu-options-4>div {
+}
+
+.formula-tab {
+    height: 30px;
+    background: silver;
+}
+
+.cells {
+    height: calc(100vh - 110px);
+    background: lightgrey;
+    overflow: auto;
+    position: relative;
+}
+
+.sheets {
+    height: 30px;
+    background: skyblue;
+    display: flex;
+    /* margin-left: 10px; */
+}
+
+.all-cells {
+    /* overflow: auto; */
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.row {
+    display: flex;
+    /* height: 30px; */
+    /* width: 40px; */
+    /* border: 1px solid; */
+}
+
+.cell {
+    min-height: 25px;
+    min-width: 70px;
+    max-width: 70px;
+    border: 1px solid;
+    outline: none;
+}
+
+.top-left-cell {
+    height: 25px;
+    width: 30px;
+    background: slategray;
+    position: absolute;
+    z-index: 3;
+}
+
+.top-row {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    background: white;
+    z-index: 2;
+}
+
+.top-row-cell {
+    min-width: 70px;
+    border: 1px solid;
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.left-col {
+    position: absolute;
+    top: 25px;
+    z-index: 2;
+    background: white;
+}
+
+.left-col-cell {
+    min-height: 25px;
+    border: 1px solid;
+    align-items: center;
+    width: 30px;
+}
+
+#formula {
+    width: 500px;
+}
+
+#address {
+    width: 70px;
+}
+
+.add-sheet {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheets-list {
+    display: flex;
+    height: 100%;
+    /* border: 1px solid; */
+    /* width: 160px; */
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.sheet {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 20%;
+    height: 65%;
+    width: 58px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-sheet {
+    background: white;
+}
+
+.active-menu{
+    background-color: lightgray;
+}
