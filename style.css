@@ -18,10 +18,42 @@ body {
 }
 
 .menu-options {
-    height: 50px;
+    height: 5vh;
     display: flex;
-    background-color: #217346;
+    background-color: white;
     align-items: center;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    background: #217346;
+    height: 5vh;
+    /* align-items: center; */
+}
+
+.menu-bar-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.menu-bar-item:hover {
+    background: rgb(16, 66, 39);
+    cursor: pointer;
+}
+
+.menu-bar-item.selected {
+    background: white;
+    color: #217346;
+}
+
+.menu-bar-item.selected:hover {
+    background: white;
+    color: #217346;
+    cursor: default;
 }
 
 .menu-options>div {
@@ -73,7 +105,7 @@ body {
 }
 
 .cells {
-    height: calc(100vh - 81px - 10vh);
+    height: calc(100vh - 24vh);
     overflow: auto;
     position: relative;
 }
@@ -151,7 +183,7 @@ body {
 }
 
 #formula {
-    width: 800px;
+    width: calc(100vw - 8vw);
     border: none;
     margin: 35px;
     padding-left: 0.5rem;
@@ -165,7 +197,7 @@ body {
 }
 
 #address {
-    width: 70px;
+    width: 6vw;
     padding-left: 0.5rem;
     margin: 10px;
     padding-right: 0.5rem;
